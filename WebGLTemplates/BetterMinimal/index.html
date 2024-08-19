@@ -16,16 +16,16 @@
 			margin: 0;
 		}
 
-		div#gameContainer {
+		div#unityContainer {
 			background: transparent !important;
 			position: absolute;
 		}
 
-		div#gameContainer canvas {
+		div#unityContainer canvas {
 			position: absolute;
 		}
 
-		div#gameContainer canvas[data-pixel-art="true"] {
+		div#unityContainer canvas[data-pixel-art="true"] {
 			position: absolute;
 			image-rendering: optimizeSpeed;
 			image-rendering: -webkit-crisp-edges;
@@ -41,7 +41,7 @@
 </head>
 
 <body>
-	<div id="gameContainer">
+	<div id="unityContainer">
 		<canvas id="unity-canvas" data-pixel-art="{{{ OPTIMIZE_FOR_PIXEL_ART }}}"></canvas>
 		<script src="Build/{{{ LOADER_FILENAME }}}"></script>
 		<script>
